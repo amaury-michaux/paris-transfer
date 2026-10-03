@@ -1,0 +1,29 @@
+# Accompagnement personnel et instructions des assistants : locaux uniquement.
+/AGENTS.md
+/AGENTS.override.md
+/agent.md
+/.local/
+/ROADMAP.md
+/PREMIER_JALON.md
+/PREMIERE_SEMAINE.md
+
+# Environnement Python et caches.
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Données et sorties de travail régénérables.
+# Les exemples et résultats choisis pour le livrable vont dans un dossier public dédié.
+/data/raw/
+/data/generated/
+/runs/
+/outputs/
+
+# Fichiers locaux du système et secrets de configuration.
+.DS_Store
+.env
+.env.local
