@@ -1,4 +1,4 @@
-# Accompagnement personnel et instructions des assistants : locaux uniquement.
+# Personal mentoring and assistant instructions: local only.
 /AGENTS.md
 /AGENTS.override.md
 /agent.md
@@ -6,8 +6,10 @@
 /ROADMAP.md
 /PREMIER_JALON.md
 /PREMIERE_SEMAINE.md
+/FIRST_MILESTONE.md
+/FIRST_WEEK.md
 
-# Environnement Python et caches.
+# Python environment and caches.
 .venv/
 __pycache__/
 *.py[cod]
@@ -16,14 +18,14 @@ __pycache__/
 .ruff_cache/
 .ipynb_checkpoints/
 
-# Données et sorties de travail régénérables.
-# Les exemples et résultats choisis pour le livrable vont dans un dossier public dédié.
+# Regenerable data and working outputs.
+# Examples and results selected for the deliverable belong in a dedicated public directory.
 /data/raw/
 /data/generated/
 /runs/
 /outputs/
 
-# Fichiers locaux du système et secrets de configuration.
+# Local system files and configuration secrets.
 .DS_Store
 .env
 .env.local

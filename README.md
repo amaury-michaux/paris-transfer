@@ -1,14 +1,14 @@
 # Paris Transfer
 
-Projet de conduite simulée en 2D, construit progressivement en Python. L'objectif est d'étudier la généralisation d'un conducteur neuronal à des routes inconnues et sa récupération après une déviation, avec un réseau implémenté en NumPy.
+A 2D driving simulation project built progressively in Python. The goal is to study how a neural driver generalizes to unfamiliar roads and recovers after a deviation, using a network implemented in NumPy.
 
-## État actuel
+## Current status
 
-Ce premier prototype Pygame affiche une route droite, une ligne centrale discontinue et une voiture représentée par un rectangle. La voiture est encore immobile : la dynamique, les capteurs et le conducteur neuronal ne sont pas encore implémentés. Aucun résultat d'apprentissage ou de généralisation n'est disponible à ce stade.
+This first Pygame prototype displays a straight road, a dashed centerline and a car represented by a rectangle. The car is still stationary: vehicle dynamics, sensors and the neural driver have not been implemented yet. No learning or generalization results are available at this stage.
 
-## Installation et lancement
+## Installation and launch
 
-L'environnement de développement actuel utilise Python 3.14.6. Depuis la racine du dépôt :
+The current development environment uses Python 3.14.6. From the repository root:
 
 ```bash
 python3 -m venv .venv
@@ -17,17 +17,17 @@ python -m pip install -r requirements.txt
 python -m scripts.demo
 ```
 
-Le lancement interactif nécessite un environnement graphique.
+Interactive execution requires a graphical environment.
 
-## Commandes
+## Controls
 
-- `R` : réinitialiser la position de la voiture.
-- `Échap` ou fermeture de la fenêtre : quitter.
+- `R`: reset the car's position.
+- `Escape` or closing the window: quit.
 
-## Vérification du prototype
+## Prototype verification
 
-Un contrôle sans fenêtre, avec les pilotes SDL `dummy`, a exécuté le dessin d'une image, la touche de réinitialisation, la sortie par `Échap` et la fermeture de Pygame. La cohérence des dépendances installées a également été vérifiée avec `python -m pip check`. Ce contrôle ne valide pas l'apparence de la fenêtre sur un écran réel.
+A headless smoke check using SDL's `dummy` drivers exercised drawing one frame, the reset key, exiting with `Escape` and shutting down Pygame. Installed dependency consistency was also checked with `python -m pip check`. This check does not validate the window's appearance on a real display.
 
-## Prochaine étape
+## Next step
 
-Ajouter le déplacement du véhicule avec des unités explicites et un pas de simulation fixe, puis vérifier son mouvement rectiligne. Le rendu devra lire l'état de la simulation afin que les futures évaluations puissent fonctionner sans fenêtre.
+Add vehicle movement with explicit units and a fixed simulation timestep, then verify straight-line motion. Rendering should read the simulation state so that future evaluations can run without a window.
