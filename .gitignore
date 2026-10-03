@@ -1,8 +1,23 @@
-# Personal mentoring and assistant instructions: local only.
+# Development roles (details and recorded assistance are in README.md):
+# Author: owns core implementation, design decisions and result validation.
+# Codex: research mentoring, experiment design, and requested documentation/GitHub work;
+# implements project code only when explicitly requested.
+# Gemini Flash: code review, debugging, suggested tests and correction hints.
+# AI-assisted project code, relevant tests and selected results belong in the public project.
+
+# Personal Codex/Gemini instructions stay local.
 /AGENTS.md
 /AGENTS.override.md
 /agent.md
+/GEMINI.md
+
+# Personal prompts, conversations, guidance, exercises and drafts stay local:
+# .local/mentoring/ = guidance and session notes
+# .local/exercises/ = standalone learning exercises
+# .local/scratch/ = drafts and trials
 /.local/
+
+# Local mentoring guides, including legacy filenames.
 /ROADMAP.md
 /PREMIER_JALON.md
 /PREMIERE_SEMAINE.md

@@ -6,6 +6,24 @@ A 2D driving simulation project built progressively in Python. The goal is to st
 
 This first Pygame prototype displays a straight road, a dashed centerline and a car represented by a rectangle. The car is still stationary: vehicle dynamics, sensors and the neural driver have not been implemented yet. No learning or generalization results are available at this stage.
 
+## Development roles and AI assistance
+
+The development workflow assigns the following responsibilities:
+
+| Contributor | Role |
+|---|---|
+| **Project author — Amaury Michaux** | Owns the research question, design decisions and final implementation. Writes and understands the core simulation, neural-network and evaluation code, validates changes and interprets the evidence. Chooses when to request assistance with a specific implementation task. |
+| **Codex** | Acts as a research mentor: explains concepts, helps define interfaces and experiments, examines evidence and suggests the next useful step. Provides hints and diagnostics by default. When requested, edits documentation, manages GitHub publication or implements a scoped change. |
+| **Gemini Flash** | Serves as the code-review and debugging partner: checks submitted functions, dimensions, units, gradients and edge cases; suggests tests and correction hints. The default review workflow leaves implementation and corrections with the author. |
+
+These roles describe the working agreement. Assistance recorded so far includes Codex preparing and translating documentation, running a headless prototype check and managing GitHub publication. Codex has not written or modified the simulator code. No completed Gemini review is recorded in this repository yet.
+
+AI feedback is checked against tests, replays and observed results. Substantial AI-generated or AI-modified implementations should be identified with the affected component and how they were validated.
+
+### Public project and local working material
+
+Project code, relevant tests, reproducible configurations, methods and selected results belong in this repository, including AI-assisted work that contributes to the deliverable. Personal mentoring notes, Codex/Gemini instructions, prompts, conversations, standalone learning exercises and drafts stay local. The `.gitignore` documents this boundary: `.local/mentoring/` holds guidance and session notes, `.local/exercises/` holds learning exercises, and `.local/scratch/` holds drafts and trials. All of `.local/` is excluded from Git.
+
 ## Installation and launch
 
 The current development environment uses Python 3.14.6. From the repository root:
